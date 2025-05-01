@@ -100,7 +100,7 @@ users = load_users()
 data = load_data()
 
 # Streamlit Interface
-
+st.set_page_config(page_title="Encrypted Data Vault", layout="wide")
 # Navigation
 if st.session_state.logged_in_user:
     menu = ["Home", "Store Data", "Retrieve Data", "Logout"]
